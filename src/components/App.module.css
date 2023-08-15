@@ -1,0 +1,14 @@
+.phonebook {
+  width: 650px;
+  margin: auto;
+  padding: 20px;
+
+  -webkit-box-shadow: 0px 4px 13px 1px rgba(151, 115, 145, 0.76);
+  box-shadow: 0px 4px 13px 1px rgba(151, 115, 145, 0.76);
+}
+.title,
+.secondTitle {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+}
+.submit {
+  height: 48px;
+
+  border-color: rgba(151, 115, 145, 0.76);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.submit:hover {
+  box-shadow: inset 0px 4px 13px 1px rgba(151, 115, 145, 0.76);
+}
+.error {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: red;
+}

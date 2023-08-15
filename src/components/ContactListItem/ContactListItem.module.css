@@ -1,0 +1,17 @@
+.contact {
+  padding: 20px;
+
+  background-color: #e6d4e0;
+  border-radius: 10px;
+}
+.name {
+  font-weight: 700;
+}
+.delBtn {
+  border-color: rgba(151, 115, 145, 0.76);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.delBtn:hover {
+  box-shadow: inset 0px 4px 13px 1px rgba(151, 115, 145, 0.76);
+}
