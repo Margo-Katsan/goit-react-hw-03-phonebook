@@ -16,7 +16,7 @@ export class App extends Component {
   }
 
   componentDidMount() {
-    const savedContacts = localStorage.getItem('Contacts');
+    const savedContacts = window.localStorage.getItem('Contacts');
     if (savedContacts !== null) {
       this.setState({
         contacts: JSON.parse(savedContacts)
@@ -26,7 +26,7 @@ export class App extends Component {
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.contacts !== prevState.contacts) {
-      localStorage.setItem("Contacts", JSON.stringify(this.state.contacts));
+      window.localStorage.setItem("Contacts", JSON.stringify(this.state.contacts));
     }
   }
 
