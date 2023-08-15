@@ -15,6 +15,21 @@ export class App extends Component {
     filter: ''
   }
 
+  componentDidMount() {
+    const savedContacts = localStorage.getItem('Contacts');
+    if (savedContacts !== null) {
+      this.setState({
+        contacts: JSON.parse(savedContacts)
+      })
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      localStorage.setItem("Contacts", JSON.stringify(this.state.contacts));
+    }
+  }
+
   changeNameFilter = (newName) => {
     this.setState({
       filter: newName,
